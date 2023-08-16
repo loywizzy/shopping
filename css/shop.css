@@ -1,0 +1,27 @@
+.form-fieldset {
+    padding: 50px; /* เพิ่มระยะห่างข้างในของ fieldset */
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของ fieldset */
+}
+
+.form-fieldset2 {
+    padding: 20px;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+#confirmButton, #cancelButton {
+    margin-top: 10px;
+    padding: 5px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#confirmButton:hover, #cancelButton:hover {
+    background-color: #0056b3;
+}
