@@ -1,8 +1,8 @@
 .form-fieldset {
-    padding: 50px; /* เพิ่มระยะห่างข้างในของ fieldset */
+    padding: 20px; /* เพิ่มระยะห่างข้างในของ fieldset */
     border: 1px solid #ddd;
-    border-radius: 20px;
-    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่างของ fieldset */
+    border-radius: 0px;
+    margin-bottom: 2px; /* เพิ่มระยะห่างด้านล่างของ fieldset */
 }
 
 .form-fieldset2 {
