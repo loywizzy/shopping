@@ -111,11 +111,14 @@
                       <button class="btn btn-outline-danger me-2" onclick="product4b()">-</button>
                       <span id="result4">0</span>
                       <button class="btn btn-outline-success ms-2" onclick="product4l()">+</button>
+                      
                   </div>
               </div>
           </div>
       </div>
   </div>
+      <button type="submit" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#checkoutModal">Checkout</button>
+      <button type="button" class="btn btn-outline-danger" value="Reload Page" onClick="window.location.reload(true)">Cancel</button>
     </div>
                 </div>
             </div>
@@ -130,7 +133,13 @@
         <p>ลดแล้ว: <span id="discount">0</span>฿</p>
       </fieldset>
   </form>
-
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="checkoutModalLabel">Order</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
       </form>
       <form class="form-fieldset">
           <fieldset class="shadow p-3 mb-5 bg-body-tertiary rounded">
@@ -170,18 +179,6 @@
               <div class="col-12">
               </div>
           </fieldset>
-          <button type="submit" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#checkoutModal">Checkout</button>
-          <button type="button" class="btn btn-outline-danger" value="Reload Page" onClick="window.location.reload(true)">Cancel</button>
-          </button>
-      </form>
-  </div>
-  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="checkoutModalLabel">Order</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
         <div class="modal-body">
           <p>สินค้าทั้งหมดจำนวน: <span id="modalUnitzz">0</span> ชิ้น</p>
           <p>ราคารวมทั้งหมด: <span id="modalTotalPrice">0</span>฿</p>
@@ -189,7 +186,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-          <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" onclick="finalizeOrder()">Confirm Order</button>
+          <button type="submit" class="btn btn-primary">Confirm Order</button>
         </div>
       </div>
     </div>
